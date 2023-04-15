@@ -1,11 +1,12 @@
 .links {
+  position: relative;
   padding: 10px;
   display: flex;
   gap: 25px;
   font-size: 1rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  z-index: 1;
+  z-index: 2;
   height: 20px;
   line-height: 20px;
   justify-content: center;
@@ -38,6 +39,110 @@
   border-bottom: none;
 }
 
-.toggleButton {
-  display: none;
+
+
+.toggleButton button {
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#open {
+  height: 100vh;
+}
+
+#open .links {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+
+#open a {
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar a {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .toggleButton {
+    display: none;
+  }
+  
+  .toggleButton svg {
+    font-size: 30px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    top: 0;
+  }
+
+  .links a {
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 1px solid transparent;
+    font-size: 20px;
+  }
+
+  .links a:hover {
+    text-decoration: none;
+    border-bottom: 0px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding-bottom: 0;
+    background-color: transparent;
+  }
+
+  .links:hover {
+    background-color: transparent;
+  }
+  
+  .toggleButton {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: tran;
+    z-index: 3;
+  }
+  #close a {
+    display: none;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: transparent;
+  }
+  #open {
+    height: auto;
+  }
+  #open .links {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  #open a {
+    width: auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .hiddenLinks {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .toggleButton {
+    display: none;
+  }
+  .hiddenLinks {
+    display: flex;
+  }
 }

@@ -8,8 +8,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
 
+  const handleLinkClick = () => {
+    setExpandNavbar(false);
+  };
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" id={expandNavbar ? "open" : "close"}>
       <div className="toggleButton">
         <button
           onClick={() => {
@@ -19,14 +23,22 @@ function Navbar() {
           <GiHamburgerMenu />
         </button>
       </div>
-      <div className={`links ${expandNavbar ? "expand" : ""}`}>
+      <div className="links" onClick={handleLinkClick}>
         <Link to="/" className="icon-class">
           <BsShopWindow />
         </Link>
-        <Link to="/Shop">Shop</Link>
-        <Link to="/Production">Production</Link>
-        <Link to="/Gallery">Gallery</Link>
-        <Link to="/CareAndRepair">Care &amp; Repair</Link>
+        <Link onClick={handleLinkClick} to="/Shop">
+          Shop
+        </Link>
+        <Link onClick={handleLinkClick} to="/Production">
+          Production
+        </Link>
+        <Link onClick={handleLinkClick} to="/Gallery">
+          Gallery
+        </Link>
+        <Link onClick={handleLinkClick} to="/CareAndRepair">
+          Care &amp; Repair
+        </Link>
       </div>
     </nav>
   );
