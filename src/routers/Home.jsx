@@ -27,9 +27,13 @@ const Home = () => {
       <div className="classic-items">
       <h1 className="text1">CLASSIC ITEMS</h1>
         <img src={dress1} />
+        <p className="item-text">Description</p>
         <img src={dress2} />
+        <p className="item-text">Description</p>
         <img src={dress3} />
+        <p className="item-text">Description</p>
         <img src={dress4} />
+        <p className="item-text">Description</p>
       </div>
     </div>
   );
