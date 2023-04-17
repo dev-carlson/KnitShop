@@ -12,3 +12,15 @@
     resize: none;
     overflow: hidden;
 }
+
+h1 {
+    border-top: 1px solid black;
+    padding: 1rem;
+}
+.info {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 10rem;
+}
