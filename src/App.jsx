@@ -2,10 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./routers/Home";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import CareAndRepair from "./routers/CareAndRepair";
 import Gallery from "./routers/Gallery";
 import Production from "./routers/Production";
 import Shop from "./routers/Shop";
+import TermsAndCondition from "./routers/TermsAndCondition";
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           <Route path="/Production" element={<Production />}></Route>
           <Route path="/Shop" element={<Shop />}></Route>
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

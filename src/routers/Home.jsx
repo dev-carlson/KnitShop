@@ -15,25 +15,25 @@ const Home = () => {
         </video>
       </div>
       <div className="content-container">
-        <div className="content">
-          <p>
-            Born from the idea to make the world's best sailor sweaters, our
-            garments are designed in Denmark and made by the best knitters in
-            Italy. Our sweaters are made to be worn and loved for a lifetime.
-          </p>
-        </div>
       </div>
 
       <div className="classic-items">
-      <h1 className="text1">CLASSIC ITEMS</h1>
+        <div className="item-container">
         <img src={dress1} />
         <p className="item-text">Description</p>
+        </div>
+        <div className="item-container">
         <img src={dress2} />
         <p className="item-text">Description</p>
+        </div>
+        <div className="item-container">
         <img src={dress3} />
         <p className="item-text">Description</p>
+        </div>
+        <div className="item-container">
         <img src={dress4} />
         <p className="item-text">Description</p>
+        </div>
       </div>
     </div>
   );

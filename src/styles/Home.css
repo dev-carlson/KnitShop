@@ -16,40 +16,26 @@
   font-weight: bold;
 }
 
-.content {
-  float: right;
-  max-width: 550px;
-}
-
-.text1 {
-  display: flex;
-  position: absolute;
-  height: auto;
-  top: -5rem;
-  left: -30rem;
-  font-size: 1rem;
-  border-top: 1px solid black;
-  width: 100%;
-}
-
 .classic-items {
-  margin-top: 15%;
   position: relative;
-  top: 11rem;
+  margin-top: 5rem;
   display: flex;
-  width: 50rem;
-  height: 30rem;
-  left: 30rem;
-  gap: 1.5rem;
-  padding: 0.5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
+  z-index: 2;
+  cursor: pointer;
 }
 
-.item-text{
-  display: flex;
-  position: relative;
-  bottom: -30rem;
-  left: -15rem;
+.classic-items img {
+  width: 20rem;
+  height: auto;
+}
+
+.item-text {
+  font-size: 1rem;
+  font-weight: bold;
+  bottom: 0;
 }
 
 
