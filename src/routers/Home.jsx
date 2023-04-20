@@ -8,6 +8,8 @@ import dress4 from "../assets/dress4.png";
 import vagi1 from "../assets/vegi1.jpg";
 import vagi2 from "../assets/vegi2.jpg";
 import vagi3 from "../assets/vegi3.jpg";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 
 const Home = () => {
   const vegiImages = [vagi1, vagi2, vagi3];
@@ -31,7 +33,9 @@ const Home = () => {
         </video>
       </div>
       <div className="content-container"></div>
-      <div className="classic-item-header">CLASSIC ITEMS</div>
+      <div className="classic-item-header">
+        <h1>CLASSIC ITEMS</h1>
+      </div>
       <div className="classic-items">
         <div className="item-container">
           <img src={dress1} />
@@ -62,13 +66,22 @@ const Home = () => {
           signature, extra-spun yarn. Available in three classic styles:
           Turtleneck, Crewneck and Polo. Photos: Frederikke Agnete Svarre
         </p>
-
-        <img
-          src={vegiImages[currentImageIndex]}
-          alt={`Image ${currentImageIndex}`}
-        />
-        <button onClick={handlePrevClick}>Prev</button>
-        <button onClick={handleNextClick}>Next</button>
+        <div className="stories-image-carousel">
+          <div className="image-container">
+            <img
+              src={vegiImages[currentImageIndex]}
+              alt={`Image ${currentImageIndex}`}
+            />
+            <div className="button-container">
+              <button onClick={handlePrevClick}>
+                <AiOutlineArrowRight />
+              </button>
+              <button onClick={handleNextClick}>
+                <AiOutlineArrowLeft />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
