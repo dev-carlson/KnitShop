@@ -39,19 +39,19 @@ const Home = () => {
       <div className="classic-items">
         <div className="item-container">
           <img src={dress1} />
-          <p className="item-text">Description</p>
+          <p className="item-text">Skipper Jacket</p>
         </div>
         <div className="item-container">
           <img src={dress2} />
-          <p className="item-text">Description</p>
+          <p className="item-text">Work Jacket</p>
         </div>
         <div className="item-container">
           <img src={dress3} />
-          <p className="item-text">Description</p>
+          <p className="item-text">Beanie Medium</p>
         </div>
         <div className="item-container">
           <img src={dress4} />
-          <p className="item-text">Description</p>
+          <p className="item-text">Seaman Trutleneck</p>
         </div>
       </div>
       <div className="stories">
@@ -74,10 +74,11 @@ const Home = () => {
             />
             <div className="button-container">
               <button onClick={handlePrevClick}>
-                <AiOutlineArrowRight />
-              </button>
-              <button onClick={handleNextClick}>
                 <AiOutlineArrowLeft />
+              </button>
+              <span className="counter-image-carousel">{currentImageIndex + 1}/{numImages}</span>
+              <button onClick={handleNextClick}>
+                <AiOutlineArrowRight />
               </button>
             </div>
           </div>

@@ -50,8 +50,9 @@
   border-bottom: 1px solid orange;
 }
 
-.clear-button, .submit-button {
-    background-color: transparent;
+.clear-button,
+.submit-button {
+  background-color: transparent;
   border: none;
   color: inherit;
   font: inherit;

@@ -14,7 +14,7 @@
 
 .links a {
   text-decoration: none;
-  color: #f7f7f7;
+  color: #dee2e3;
   border-bottom: 1px solid transparent;
 }
 
@@ -28,7 +28,7 @@
 
 .links a:hover {
   text-decoration: none;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
   color: black;
   display: inline-block;
   padding-bottom: 28px;
@@ -38,8 +38,6 @@
 .links a.icon-class:hover {
   border-bottom: none;
 }
-
-
 
 .toggleButton button {
   margin-right: 20px;
@@ -74,7 +72,7 @@
   .toggleButton {
     display: none;
   }
-  
+
   .toggleButton svg {
     font-size: 30px;
     position: relative;
@@ -101,7 +99,7 @@
   .links:hover {
     background-color: transparent;
   }
-  
+
   .toggleButton {
     display: flex;
     position: absolute;

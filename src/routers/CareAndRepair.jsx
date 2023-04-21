@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const CareAndRepair = () => {
-  return (
-    <div>
-      CareAndRepair
-    </div>
-  )
-}
+  return <div>CareAndRepair</div>;
+};
 
-export default CareAndRepair
+export default CareAndRepair;

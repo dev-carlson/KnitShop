@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Production = () => {
-  return (
-    <div>
-      Production
-    </div>
-  )
-}
+  return <div>Production</div>;
+};
 
-export default Production
+export default Production;

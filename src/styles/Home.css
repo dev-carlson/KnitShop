@@ -18,8 +18,7 @@
 
 .classic-item-header {
   position: relative;
-  width: 90%;
-  padding-left: 1rem;
+  padding-left: 2rem;
   font-size: 1rem;
 }
 
@@ -61,20 +60,40 @@
 }
 
 .image-container {
-  position: relative; 
+  position: relative;
+  height: 35rem;
+  width: auto;
   display: flex;
   justify-content: flex-end;
+  right: 1rem;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 0;
   right: 0;
-  height: 30rem;
+  display: flex;
+  justify-content: space-between;
+  width: 5%;
+  height: 1.2rem;
+  background-color: rgb(255, 251, 251, 0.5);
 }
 
 .stories-image-carousel button {
   margin: 0;
   background-color: transparent;
   border: none;
-  margin-right: 2%;
-  font-family: inherit;
   font-size: inherit;
   cursor: pointer;
+  color: rgb(0, 0, 0);
   outline: none;
+  transition: 0.5s ease-out;
+}
+
+.stories-image-carousel button:hover {
+  color: aqua;
+}
+
+.counter-image-carousel {
+  font-size: 0.8rem;
 }
