@@ -1,3 +1,13 @@
+.navbar {
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+}
+
 .links {
   position: relative;
   padding: 10px;

@@ -13,6 +13,7 @@
   height: 1rem;
   resize: none;
   overflow: hidden;
+  background-color: transparent;
 }
 
 .info {

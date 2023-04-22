@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/Footer.css";
 import TermsAndCondition from "../routers/TermsAndCondition";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function Footer() {
   const [text, setText] = useState("");
@@ -10,13 +11,36 @@ function Footer() {
   const handleClear = () => {
     setText("");
   };
+  const submitToastSuccess = () =>
+    toast.success("Email Sent!", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+
+  const submitToastUnsuccess = () =>
+    toast.error("Please enter a valid email address", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isChecked && text.includes("@")) {
-      alert("Submitted!");
+      submitToastSuccess();
     } else if (!text.includes("@")) {
-      alert("Please enter a valid email address");
+      submitToastUnsuccess();
     } else {
       alert("Please agree to the terms and conditions.");
     }
@@ -39,7 +63,7 @@ function Footer() {
           <div>
             <textarea
               className="text-area"
-              placeholder="Join our newsletter"
+              placeholder="Enter your Email here"
               value={text}
               onChange={(e) => setText(e.target.value)}
               onKeyDown={(e) => {

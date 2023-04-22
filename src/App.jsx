@@ -8,10 +8,14 @@ import Gallery from "./routers/Gallery";
 import Production from "./routers/Production";
 import Shop from "./routers/Shop";
 import TermsAndCondition from "./routers/TermsAndCondition";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 function App() {
   return (
     <div className="App">
+      <ToastContainer/>
       <Router>
         <Navbar />
         <Routes>

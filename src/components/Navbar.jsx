@@ -13,7 +13,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar" id={expandNavbar ? "open" : "close"}>
+    <nav className="navbar" id={expandNavbar ? "open" : "close"} >
       <div className="toggleButton">
         <button
           onClick={() => {
