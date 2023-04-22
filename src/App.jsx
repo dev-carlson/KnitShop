@@ -9,7 +9,7 @@ import Production from "./routers/Production";
 import Shop from "./routers/Shop";
 import TermsAndCondition from "./routers/TermsAndCondition";
 import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import '../node_modules/react-toastify/dist/ReactToastify.css';
 
 
 function App() {
