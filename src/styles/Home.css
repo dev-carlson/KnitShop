@@ -72,10 +72,8 @@
 .button-container {
   position: absolute;
   bottom: 0;
-  right: 0;
   display: flex;
-  justify-content: space-between;
-  width: 5%;
+  justify-content:space-around;
   height: 1.2rem;
   background-color: rgb(255, 251, 251, 0.5);
 }
