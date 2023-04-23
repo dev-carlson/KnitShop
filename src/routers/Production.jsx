@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+
+import "../styles/Production.css";
+
 import design1 from "../assets/design1.jpg";
 import design2 from "../assets/design2.jpg";
 import design3 from "../assets/design3.jpg";
@@ -30,12 +33,15 @@ const productionData = [
 function Production() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
-  // Function to update the selectedProduct state when a product button is clicked
-  const handleProductClick = (product) => {
-    setSelectedProduct(product);
+  // Function to handle the click event for the Design button
+  const handleMaterialClick = () => {
+    setSelectedProduct({
+      id: 2,
+      images: [material1, material2, material3, material4],
+      name: "Material",
+    });
   };
 
-  // Function to handle the click event for the Design button
   const handleDesignClick = () => {
     setSelectedProduct({
       id: 1,
@@ -58,22 +64,24 @@ function Production() {
     : productionData;
 
   return (
-    <div>
+    <div className="production">
       <h1>Dresses</h1>
-      <div>
-        <button onClick={() => setSelectedProduct(null)}>All Dresses</button>
+      <div className="production-button-container">
+        <button onClick={() => setSelectedProduct(null)}>All</button>
         <button
           onClick={() =>
             handleDesignClick({
               id: 1,
               images: [design1, design2, design3, design4],
-              name: "Blue Dress",
+              name: "Design",
             })
           }
         >
           Design
         </button>
-        <button onClick={() => handleProductClick({ id: 2, name: "Material" })}>
+        <button
+          onClick={() => handleMaterialClick({ id: 2, name: "Material" })}
+        >
           Material
         </button>
         <button
@@ -82,21 +90,22 @@ function Production() {
           Production
         </button>
       </div>
-      <ul>
-        {/* Map over the filteredProducts array and render each product with its images as list items */}
-        {filteredProducts.map((product) => (
-          <li key={product.id}>
-            {product.name}
-            <ul>
-              {product.images.map((image, index) => (
-                <li key={index}>
-                  <img src={image} alt={`Image ${index + 1}`} />
-                </li>
-              ))}
-            </ul>
-          </li>
+      <div className="production-image-container">
+  {/* Map over the filteredProducts array and render each product with its images as list items */}
+  {filteredProducts.map((product) => (
+    <div key={product.id} className="production-product-container">
+      <h2>{product.name}</h2>
+      <div>
+        {product.images.map((image, index) => (
+          <div key={index}>
+            <img className="production-image" src={image} alt={`Image ${index + 1}`} />
+          </div>
         ))}
-      </ul>
+      </div>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 }
