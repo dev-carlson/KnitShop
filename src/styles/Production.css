@@ -5,16 +5,17 @@
 .production-image-container {
   display: flex;
   flex-direction: row;
-}
-
-.production-product-container {
   position: relative;
-  padding: 10px;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .production-image {
-  width: 30rem;
-  height: 30rem;
+  position: relative;
+  width: 35rem;
+  height: 35rem;
   display: block;
   max-width: 100%;
   padding-top: 2rem;
@@ -28,4 +29,29 @@
 .production-image:hover {
   border-top-color: #f96300;
   box-shadow: 0px -1px 0px #f96300;
+}
+
+.production-button-container  {
+  display: flex;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 1rem;
+}
+
+.production-button-container button{
+  color: #e6e2de;
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.production-button-container button:not(:last-child)::after {
+  content: " | ";
+}
+
+.production-button-container button:focus {
+  color: #b0a298;
 }
