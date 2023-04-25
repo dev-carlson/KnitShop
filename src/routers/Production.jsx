@@ -65,7 +65,6 @@ function Production() {
 
   return (
     <div className="production">
-      <h1>Dresses</h1>
       <div className="production-button-container">
         <button onClick={() => setSelectedProduct(null)}>All</button>
         <button
@@ -105,7 +104,6 @@ function Production() {
     </div>
   ))}
 </div>
-
     </div>
   );
 }
