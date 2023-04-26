@@ -1,11 +1,10 @@
-.production {
+.production-container {
   background-color: #6f5644;
 }
 
-.production-image-container {
+.production-content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   position: relative;
   padding: 3rem;
   align-items: center;
@@ -13,7 +12,14 @@
   gap: 3rem;
 }
 
-.production-image {
+.production-items {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 3rem;
+}
+
+.production-item img{
   position: relative;
   width: 25rem;
   height: 25rem;
@@ -27,24 +33,25 @@
   object-fit: cover;
 }
 
-.production-image:hover {
+.production-item img:hover {
   border-top-color: #f96300;
   box-shadow: 0px -1px 0px #f96300;
 }
 
-.production-button-container  {
+.production-button-container {
   position: sticky;
   top: 50px;
   display: flex;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   align-items: center;
   justify-content: center;
   height: 1rem;
   background-color: transparent;
-  z-index: 1;
+  z-index: 999;
 }
 
-.production-button-container button{
+.production-button-container button {
   display: flex;
   color: #e6e2de;
   font-size: 1.5rem;
@@ -55,6 +62,7 @@
 
 .production-button-container button:not(:last-child)::after {
   content: " | ";
+  padding-left: 1rem;
 }
 
 .production-button-container button:focus {

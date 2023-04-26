@@ -36,8 +36,8 @@ const Home = () => {
       <div className="classic-items">
         {HomeComponents.map((item, index) => (
           <div key={index}>
+            <img src={item.image} />
             <h2>{item.name}</h2>
-            <img src={item.image} alt={item.name} />
           </div>
         ))}
       </div>
