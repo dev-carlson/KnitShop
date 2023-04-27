@@ -58,12 +58,12 @@ function Production() {
                   <h3>{product.name}</h3>
                   <p>
                     {expandedIndex === index ? (
-                      <p>{product.description}</p>
+                      <p className="readmore-text">{product.description}</p>
                     ) : (
                       <p>{product.description.slice(0, 50)}...</p>
                     )}
                   </p>
-                  <button onClick={() => toggleExpanded(index)}>
+                  <button className="read-button" onClick={() => toggleExpanded(index)}>
                     {expandedIndex === index ? "Read less" : "Read more"}
                   </button>
                 </div>
@@ -79,6 +79,16 @@ function Production() {
                   <h5>{product.title}</h5>
                   <img src={product.image} />
                   <h3>{product.name}</h3>
+                  <p>
+                    {expandedIndex === index ? (
+                      <p className="readmore-text">{product.description}</p>
+                    ) : (
+                      <p>{product.description.slice(0, 50)}...</p>
+                    )}
+                  </p>
+                  <button className="read-button" onClick={() => toggleExpanded(index)}>
+                    {expandedIndex === index ? "Read less" : "Read more"}
+                  </button>
                 </div>
               ))}
             </div>
@@ -92,6 +102,16 @@ function Production() {
                   <h5>{product.title}</h5>
                   <img src={product.image} />
                   <h3>{product.name}</h3>
+                  <p>
+                    {expandedIndex === index ? (
+                      <p className="readmore-text">{product.description}</p>
+                    ) : (
+                      <p>{product.description.slice(0, 50)}...</p>
+                    )}
+                  </p>
+                  <button className="read-button" onClick={() => toggleExpanded(index)}>
+                    {expandedIndex === index ? "Read less" : "Read more"}
+                  </button>
                 </div>
               ))}
             </div>

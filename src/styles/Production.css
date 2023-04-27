@@ -84,3 +84,23 @@
 .production-button-container button:focus {
   color: #b0a298;
 }
+
+.readmore-text{
+  position: static;
+  max-width: 30rem;
+}
+.read-button {
+  position: relative;
+  background: none;
+  border: none;
+  color: #e6e2de; 
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: underline;
+}
+
+.read-button:hover {
+color:#f96300
+}
