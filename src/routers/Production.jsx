@@ -44,7 +44,7 @@ function Production() {
           Material
         </button>
         <button onClick={() => handleCategoryClick("production")}>
-          Production
+          Production  
         </button>
       </div>
       <div className="production-content">
