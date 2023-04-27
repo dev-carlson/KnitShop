@@ -3,20 +3,37 @@
 }
 
 .production-content {
-  display: flex;
-  flex-direction: row;
   position: relative;
-  padding: 3rem;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  color: #e6e2de;
+  padding: 3rem;
 }
 
-.production-items {
+
+.production-design {
   display: flex;
   flex-wrap: nowrap;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 3rem;
+  gap: 4rem;
+}
+
+.production-material {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 3rem;
+  gap: 4rem;
+}
+
+.production-production {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 3rem;
+  gap: 4rem;
 }
 
 .production-item img{
@@ -27,15 +44,15 @@
   max-width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid black;
+  box-shadow: 0px -1px 0px #000000;
   box-sizing: border-box;
   cursor: pointer;
   object-fit: cover;
+  top: -3rem;
 }
 
 .production-item img:hover {
-  border-top-color: #f96300;
-  box-shadow: 0px -1px 0px #f96300;
+  box-shadow: 0px -3px 0px #f96300;
 }
 
 .production-button-container {

@@ -44,7 +44,7 @@ function Production() {
       <div className="production-content">
         {designProducts.length > 0 && (
           <div className="production-row">
-            <div className="production-items">
+            <div className="production-design">
               {designProducts.map((product, index) => (
                 <div key={index} className="production-item">
                   <h5>{product.title}</h5>
@@ -57,7 +57,7 @@ function Production() {
         )}
         {materialProducts.length > 0 && (
           <div className="production-row">
-            <div className="production-items">
+            <div className="production-material">
               {materialProducts.map((product, index) => (
                 <div key={index} className="production-item">
                   <h5>{product.title}</h5>
@@ -70,7 +70,7 @@ function Production() {
         )}
         {productionProducts.length > 0 && (
           <div className="production-row">
-            <div className="production-items">
+            <div className="production-production">
               {productionProducts.map((product, index) => (
                 <div key={index} className="production-item">
                   <h5>{product.title}</h5>
