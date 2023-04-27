@@ -29,6 +29,12 @@ function Production() {
     (product) => product.category === "production"
   );
 
+  const [expandedIndex, setExpandedIndex] = useState(-1);
+
+  const toggleExpanded = (index) => {
+    setExpandedIndex(expandedIndex === index ? -1 : index);
+  };
+
   return (
     <div className="production-container">
       <div className="production-button-container">
@@ -50,6 +56,16 @@ function Production() {
                   <h5>{product.title}</h5>
                   <img src={product.image} />
                   <h3>{product.name}</h3>
+                  <p>
+                    {expandedIndex === index ? (
+                      <p>{product.description}</p>
+                    ) : (
+                      <p>{product.description.slice(0, 50)}...</p>
+                    )}
+                  </p>
+                  <button onClick={() => toggleExpanded(index)}>
+                    {expandedIndex === index ? "Read less" : "Read more"}
+                  </button>
                 </div>
               ))}
             </div>
