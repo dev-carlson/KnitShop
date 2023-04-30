@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import ShopComponents from "../imageComponents/ShopComponents";
 
 const Shop = () => {
+  const [selectedDressType, setSelectedDressType] = useState(ShopComponents);
+
+  const handleFilterClick = () => {
+    setSelectedDressType(ShopComponents);
+  };
+
   return (
     <>
-      <div className="shop-header">Shop</div>
-      <button className="filter-list">Signature Yarn</button>
-      <button className="filter-list">Organic Cotton</button>
-      <button className="filter-list">Undyed Yarn</button>
-      <button className="filter-list">Indigo Dyed Yarn</button>
-      <div className="navy-dress-images">
-        img
+      <div className="dress-types">
+        <div className="title-description"> Navy</div>
+        <div className="shop-navy-container">
+          {selectedDressType
+            .filter((item) => item.category === "navy")
+            .map((item, index) => (
+              <img key={index} src={item.image} />
+            ))}
+        </div>
+        <div className="shop-sailor-container">
+          {selectedDressType
+            .filter((item) => item.category === "sailor")
+            .map((item, index) => (
+              <img key={index} src={item.image} />
+            ))}
+        </div>
       </div>
     </>
   );
