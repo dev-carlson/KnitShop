@@ -7,6 +7,8 @@ import navy6 from "../assets/navy6.jpg";
 import navy7 from "../assets/navy7.jpg";
 import sailor1 from "../assets/sailor1.webp";
 import sailor2 from "../assets/sailor2.webp";
+import skipper1 from "../assets/skipper1.webp";
+import skipper2 from "../assets/skipper2.webp";
 
 const ShopComponents = [
   {
@@ -53,6 +55,16 @@ const ShopComponents = [
     name: "Sailor Crewneck",
     image: sailor2,
     category: "sailor",
+  },
+  {
+    name: "Skipper Jacket",
+    image: skipper1,
+    category: "skipper",
+  },
+  {
+    name: "Skipper Vest",
+    image: skipper2,
+    category: "skipper",
   },
 ];
 

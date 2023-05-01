@@ -11,7 +11,7 @@ const Shop = () => {
   return (
     <>
       <div className="dress-types">
-        <div className="title-description"> Navy</div>
+        <div className="title-description">NAVY</div>
         <div className="shop-navy-container">
           {selectedDressType
             .filter((item) => item.category === "navy")
@@ -19,6 +19,7 @@ const Shop = () => {
               <img key={index} src={item.image} />
             ))}
         </div>
+        <div className="title-description">SAILOR</div>
         <div className="shop-sailor-container">
           {selectedDressType
             .filter((item) => item.category === "sailor")
@@ -26,6 +27,14 @@ const Shop = () => {
               <img key={index} src={item.image} />
             ))}
         </div>
+      </div>
+      <div className="shop-skipper-container">
+        <div className="title-description">SKIPPER</div>
+        {selectedDressType
+          .filter((item) => item.category === "skipper")
+          .map((item, index) => (
+            <img key={index} src={item.image} />
+          ))}
       </div>
     </>
   );
