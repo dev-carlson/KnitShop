@@ -72,7 +72,7 @@ const ShopComponents = [
     category: "skipper",
   },
   {
-    id: "sakipper2",
+    id: "skipper2",
     name: "Skipper Vest",
     image: skipper2,
     category: "skipper",

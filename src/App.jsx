@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./routers/Home";
-import ProductPage from "./components/ProductPage";
+import ProductPage from "./components/ProductPage"
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Chatbot from "./components/Chatbot";
@@ -25,7 +25,7 @@ function App() {
           <Route path="/Gallery" element={<Gallery />}></Route>
           <Route path="/Production" element={<Production />}></Route>
           <Route path="/Shop" element={<Shop />}></Route>
-          <Route path="/product/:id" component={ProductPage} />
+          <Route path="/product/:id" element={<ProductPage />} />
         </Routes>
         <Footer />
       </Router>
