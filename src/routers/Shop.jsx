@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+
+import { Link } from "react-router-dom";
 import ShopComponents from "../imageComponents/ShopComponents";
 
 const Shop = () => {
   const [selectedDressType, setSelectedDressType] = useState(ShopComponents);
 
-  const handleFilterClick = () => {
+  const handleFilterImage = () => {
     setSelectedDressType(ShopComponents);
   };
 
@@ -16,7 +18,9 @@ const Shop = () => {
           {selectedDressType
             .filter((item) => item.category === "navy")
             .map((item, index) => (
-              <img key={index} src={item.image} />
+              <Link key={index} to={`/product/${item.id}`}>
+                <img src={item.image} alt={item.name} />
+              </Link>
             ))}
         </div>
         <div className="title-description">SAILOR</div>
@@ -24,7 +28,9 @@ const Shop = () => {
           {selectedDressType
             .filter((item) => item.category === "sailor")
             .map((item, index) => (
-              <img key={index} src={item.image} />
+              <Link key={index} to={`/product/${item.id}`}>
+                <img src={item.image} alt={item.name} />
+              </Link>
             ))}
         </div>
       </div>
@@ -33,7 +39,9 @@ const Shop = () => {
         {selectedDressType
           .filter((item) => item.category === "skipper")
           .map((item, index) => (
-            <img key={index} src={item.image} />
+            <Link key={index} to={`/product/${item.id}`}>
+              <img src={item.image} alt={item.name} />
+            </Link>
           ))}
       </div>
     </>

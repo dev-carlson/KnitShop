@@ -12,56 +12,67 @@ import skipper2 from "../assets/skipper2.webp";
 
 const ShopComponents = [
   {
+    id: "navy1",
     name: "Navy Full-Zip",
     image: navy1,
     category: "navy",
   },
   {
+    id: "navy2",
     name: "Navy Crewneck",
     image: navy2,
     category: "navy",
   },
   {
+    id: "navy3",
     name: "Navy Full-Zip Pockets",
     image: navy3,
     category: "navy",
   },
   {
+    id: "navy4",
     name: "Navy Turtleneck",
     image: navy4,
     category: "navy",
   },
   {
+    id: "navy5",
     name: "Navy Half-Zip",
     image: navy5,
     category: "navy",
   },
   {
+    id: "navy6",
     name: "Navy Vest",
     image: navy6,
     category: "navy",
   },
   {
+    id: "navy7",
     name: "Navy Half-Zip Pockets",
     image: navy7,
     category: "navy",
   },
   {
+    id: "sailor1",
     name: "Sailor Turtleneck",
     image: sailor1,
     category: "sailor",
   },
   {
+    id: "sailor2",
     name: "Sailor Crewneck",
     image: sailor2,
     category: "sailor",
   },
   {
+    id: "skipper1",
     name: "Skipper Jacket",
     image: skipper1,
     category: "skipper",
   },
   {
+    id: "sakipper2",
     name: "Skipper Vest",
     image: skipper2,
     category: "skipper",

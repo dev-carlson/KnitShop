@@ -53,11 +53,15 @@
 }
 
 .stories p {
+  display: flex;
   position: relative;
-  width: 30%;
+  width: 20em;
+  left: 1rem;
+  text-align: justify;
 }
 
 .image-container {
+  height: 1.2rem;
   position: relative;
   height: 35rem;
   display: flex;
