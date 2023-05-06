@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-
 import { Link } from "react-router-dom";
+
 import ShopComponents from "../imageComponents/ShopComponents";
+import "../styles/Shop.css";
 
 const Shop = () => {
   const [selectedDressType, setSelectedDressType] = useState(ShopComponents);
@@ -19,28 +20,38 @@ const Shop = () => {
             .filter((item) => item.category === "navy")
             .map((item, index) => (
               <Link key={index} to={`/product/${item.id}`}>
+                <div className="shop-image-container">
                 <img src={item.image} alt={item.name} />
+                <p className="shop-image-container-name">{item.name}</p>
+                </div>
               </Link>
             ))}
         </div>
+
         <div className="title-description">SAILOR</div>
         <div className="shop-sailor-container">
           {selectedDressType
             .filter((item) => item.category === "sailor")
             .map((item, index) => (
               <Link key={index} to={`/product/${item.id}`}>
+                <div className="shop-image-container">
                 <img src={item.image} alt={item.name} />
+                <p className="shop-image-container-name">{item.name}</p>
+                </div>
               </Link>
             ))}
         </div>
       </div>
+      <div className="title-description">SKIPPER</div>
       <div className="shop-skipper-container">
-        <div className="title-description">SKIPPER</div>
         {selectedDressType
           .filter((item) => item.category === "skipper")
           .map((item, index) => (
             <Link key={index} to={`/product/${item.id}`}>
+              <div className="shop-image-container">
               <img src={item.image} alt={item.name} />
+              <p className="shop-image-container-name">{item.name}</p>
+              </div>
             </Link>
           ))}
       </div>
