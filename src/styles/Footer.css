@@ -8,6 +8,7 @@
 }
 
 .text-area {
+  position: relative;
   display: inline-block;
   width: 10rem;
   height: 1rem;
@@ -26,21 +27,25 @@
 }
 
 .footer-link {
+  position: relative;
   display: flex;
   justify-content: flex-end;
 }
 
 .footer-link a {
+  position: relative;
   text-decoration: none;
   outline: none;
   color: black;
   padding: 1rem;
 }
 .footer-link a:hover {
+  position: relative;
   text-decoration: none;
   text-decoration: underline;
 }
 .text-area {
+  position: relative;
   width: 15rem;
   border: none;
   border-bottom: 1px solid black;
@@ -53,6 +58,7 @@
 
 .clear-button,
 .submit-button {
+  position: relative;
   background-color: transparent;
   border: none;
   color: inherit;

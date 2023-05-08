@@ -21,13 +21,12 @@ const Shop = () => {
             .map((item, index) => (
               <Link key={index} to={`/product/${item.id}`}>
                 <div className="shop-image-container">
-                <img src={item.image} alt={item.name} />
-                <p className="shop-image-container-name">{item.name}</p>
+                  <img src={item.image} alt={item.name} />
+                  <p className="shop-image-container-name">{item.name}</p>
                 </div>
               </Link>
             ))}
         </div>
-
         <div className="title-description">SAILOR</div>
         <div className="shop-sailor-container">
           {selectedDressType
@@ -35,25 +34,25 @@ const Shop = () => {
             .map((item, index) => (
               <Link key={index} to={`/product/${item.id}`}>
                 <div className="shop-image-container">
-                <img src={item.image} alt={item.name} />
-                <p className="shop-image-container-name">{item.name}</p>
+                  <img src={item.image} alt={item.name} />
+                  <p className="shop-image-container-name">{item.name}</p>
                 </div>
               </Link>
             ))}
         </div>
-      </div>
-      <div className="title-description">SKIPPER</div>
-      <div className="shop-skipper-container">
-        {selectedDressType
-          .filter((item) => item.category === "skipper")
-          .map((item, index) => (
-            <Link key={index} to={`/product/${item.id}`}>
-              <div className="shop-image-container">
-              <img src={item.image} alt={item.name} />
-              <p className="shop-image-container-name">{item.name}</p>
-              </div>
-            </Link>
-          ))}
+        <div className="title-description">SKIPPER</div>
+        <div className="shop-skipper-container">
+          {selectedDressType
+            .filter((item) => item.category === "skipper")
+            .map((item, index) => (
+              <Link key={index} to={`/product/${item.id}`}>
+                <div className="shop-image-container">
+                  <img src={item.image} alt={item.name} />
+                  <p className="shop-image-container-name">{item.name}</p>
+                </div>
+              </Link>
+            ))}
+        </div>
       </div>
     </>
   );
