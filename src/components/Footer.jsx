@@ -51,7 +51,7 @@ function Footer() {
   };
 
   return (
-    <>
+    <div className="footer">
       <h1>info</h1>
       <p className="info">Flagship Store location & hours</p>
       <p className="info">Gammeltorv 6, 1st floor</p>
@@ -102,7 +102,7 @@ function Footer() {
           <Link to="CareAndRepair">Care & Repair</Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
