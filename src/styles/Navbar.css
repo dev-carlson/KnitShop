@@ -85,14 +85,12 @@
   .toggleButton svg {
     font-size: 30px;
     position: relative;
-    color: rgb(90, 90, 90);
+    color: rgb(0, 0, 0);
     top: 0;
   }
 
   .links a {
-    text-decoration: none;
     color: #000000;
-    border-bottom: 1px solid transparent;
     font-size: 20px;
   }
 
@@ -100,7 +98,6 @@
     text-decoration: none;
     box-shadow: 0px 3px 0px 0px black;
     color: rgb(0, 0, 0);
-    display: inline-block;
     padding-bottom: 0;
     background-color: transparent;
   }
@@ -130,6 +127,7 @@
   }
   #open {
     height: auto;
+    background-color: white;
   }
   #open .links {
     flex-direction: column;
