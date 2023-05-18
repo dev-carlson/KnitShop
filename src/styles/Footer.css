@@ -2,6 +2,12 @@
   clear: both;
 }
 
+.footer h1{
+  border-top: 0.1rem solid black;
+  padding-left: 1rem;
+  font-size: 1rem
+}
+
 .terms-condition {
   position: relative;
   bottom: 0;

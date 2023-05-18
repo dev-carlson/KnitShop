@@ -1,3 +1,16 @@
+.shop-container {
+  padding: 0px 2.8rem;
+}
+
+.shop-title-container{
+  font-size: 1.8rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  margin-top: 2rem;
+  border-bottom: 2px solid black;
+  padding: 0px 1rem 1rem 1rem;
+}
+
 .dress-types {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 

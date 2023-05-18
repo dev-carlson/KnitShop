@@ -12,7 +12,10 @@ const Shop = () => {
   };
 
   return (
-    <>
+    <div className="shop-container">
+    <div className="shop-title-container">
+      SHOP
+    </div>
       <div className="dress-types">
         <div className="title-description">NAVY</div>
         <div className="shop-navy-container">
@@ -54,7 +57,7 @@ const Shop = () => {
             ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
