@@ -22,7 +22,19 @@ const Home = () => {
     setCurrentImageIndex((currentImageIndex + 1) % numImages);
   };
 
-  //just a bunch of divs
+  const handleImageClick = (event) => {
+    const { offsetX, target } = event.nativeEvent;
+    const imageWidth = target.offsetWidth;
+    const clickPosition = offsetX;
+
+    // Check if the click position is on the left half of the image
+    if (clickPosition < imageWidth / 2) {
+      handlePrevClick(); // Call handlePrevClick() to navigate to the previous image
+    } else {
+      handleNextClick(); // Call handleNextClick() to navigate to the next image
+    }
+  };
+
   return (
     <>
       <div className="video-container">
@@ -61,6 +73,7 @@ const Home = () => {
               <img
                 src={vegiImages[currentImageIndex]}
                 alt={`Image ${currentImageIndex}`}
+                onClick={handleImageClick} // Add onClick event handler to the image
               />
               <div className="button-container">
                 <button onClick={handlePrevClick}>
