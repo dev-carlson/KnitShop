@@ -86,6 +86,7 @@
 .production-button-container button:not(:last-child)::after {
   content: " | ";
   padding-left: 1rem;
+  color: #e6e2de;
 }
 
 .production-button-container button:focus {
@@ -106,6 +107,7 @@
   font-size: inherit;
   font-family: inherit;
   text-decoration: underline;
+  z-index: 999;
 }
 
 .read-button:hover {

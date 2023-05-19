@@ -82,6 +82,7 @@
 
 @media screen and (max-width: 768px) {
   .image-container {
+    display: flex;
     position: relative;
     margin-top: 2rem;
   }
@@ -94,9 +95,11 @@
   justify-content: space-around;
   height: 1.2rem;
   background-color: rgb(255, 251, 251, 0.5);
+  z-index: 999;
 }
 
 .stories-image-carousel button {
+  position: relative;
   background-color: transparent;
   border: none;
   font-size: inherit;
@@ -104,10 +107,6 @@
   color: rgb(0, 0, 0);
   outline: none;
   transition: 0.5s ease-out;
-}
-
-.stories-image-carousel button:hover {
-  color: aqua;
 }
 
 .counter-image-carousel {

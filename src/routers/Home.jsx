@@ -73,7 +73,7 @@ const Home = () => {
               <img
                 src={vegiImages[currentImageIndex]}
                 alt={`Image ${currentImageIndex}`}
-                onClick={handleImageClick} // Add onClick event handler to the image
+                onClick={handleImageClick}
               />
               <div className="button-container">
                 <button onClick={handlePrevClick}>
