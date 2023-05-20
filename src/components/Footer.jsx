@@ -59,7 +59,7 @@ function Footer() {
       <p className="info">Weekdays - 10:00 - 18:00</p>
       <p className="info">Saturdays - 10:00 - 16:00</p>
       <div className="terms-condition">
-        <form>
+        <form className="email-container">
           <div>
             <textarea
               className="text-area"

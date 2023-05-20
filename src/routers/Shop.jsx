@@ -13,11 +13,17 @@ const Shop = () => {
 
   return (
     <div className="shop-container">
-    <div className="shop-title-container">
-      SHOP
-    </div>
+      <div className="shop-title-container">SHOP</div>
       <div className="dress-types">
-        <div className="title-description">NAVY</div>
+        <div className="title-description">
+          <h1>NAVY</h1>
+          {selectedDressType.map((dress) => (
+            <p key={dress.id}>
+              {dress.title}
+              {dress.id === "navyTitle" && dress.description}
+            </p>
+          ))}
+        </div>
         <div className="shop-navy-container">
           {selectedDressType
             .filter((item) => item.category === "navy")
@@ -30,7 +36,15 @@ const Shop = () => {
               </Link>
             ))}
         </div>
-        <div className="title-description">SAILOR</div>
+        <div className="title-description">
+          <h1>SAILOR</h1>
+          {selectedDressType.map((dress) => (
+            <p key={dress.id}>
+              {dress.title}
+              {dress.id === "sailorTitle" && dress.description}
+            </p>
+          ))}
+        </div>
         <div className="shop-sailor-container">
           {selectedDressType
             .filter((item) => item.category === "sailor")
@@ -43,7 +57,15 @@ const Shop = () => {
               </Link>
             ))}
         </div>
-        <div className="title-description">SKIPPER</div>
+        <div className="title-description">
+          <h1>SKIPPER</h1>
+          {selectedDressType.map((dress) => (
+            <p key={dress.id}>
+              {dress.title}
+              {dress.id === "skipperTitle" && dress.description}
+            </p>
+          ))}
+        </div>
         <div className="shop-skipper-container">
           {selectedDressType
             .filter((item) => item.category === "skipper")

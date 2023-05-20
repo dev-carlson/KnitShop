@@ -12,12 +12,19 @@ import skipper2 from "../assets/skipper2.webp";
 
 const ShopComponents = [
   {
-    id:"navyTitle",
-    description:"The Navy collection is knitted on a 5 gauge flat knitting machine using 6 threads of our custom extra spun yarn. Knitted in full cardigan stitch, which is our heaviest quality. These styles are made of 100% pure new wool and have a regular fit."
+    id: "navyTitle",
+    description:
+      "The Navy collection is knitted on a 5 gauge flat knitting machine using 6 threads of our custom extra spun yarn. Knitted in full cardigan stitch, which is our heaviest quality. These styles are made of 100% pure new wool and have a regular fit.",
   },
   {
-    id:"sailorTitle",
-    description:"TThe sailor collection is knitted on a 7 gauge flat knitting machine with 4 threads of our custom extra spun yarn. Knitted in half cardigan stitch, which is our medium-weight quality. These styles are made of 100% pure new wool and have a slightly narrower fit compared to the Navy collection."
+    id: "sailorTitle",
+    description:
+      "The sailor collection is knitted on a 7 gauge flat knitting machine with 4 threads of our custom extra spun yarn. Knitted in half cardigan stitch, which is our medium-weight quality. These styles are made of 100% pure new wool and have a slightly narrower fit compared to the Navy collection.",
+  },
+  {
+    id: "skipperTitle",
+    description:
+      "The sailor collection is knitted on a 7 gauge flat knitting machine with 4 threads of our custom extra spun yarn. Knitted in half cardigan stitch, which is our medium-weight quality. These styles are made of 100% pure new wool and have a slightly narrower fit compared to the Navy collection.",
   },
   {
     id: "navy1",
