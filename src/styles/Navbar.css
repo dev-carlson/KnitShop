@@ -2,10 +2,11 @@
   background-color: transparent;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  z-index: 999;
+  z-index: 9999;
   position: fixed;
   top: 0;
+  pointer-events: auto;
+
 }
 
 .links {
@@ -128,6 +129,7 @@
   #open {
     height: auto;
     background-color: white;
+    width: 100%;
   }
   #open .links {
     flex-direction: column;
