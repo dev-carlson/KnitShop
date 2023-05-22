@@ -15,7 +15,8 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.10.0",
     "react-toastify": "^9.1.2",
-    "sadsad": "^1.0.0"
+    "sadsad": "^1.0.0",
+    "scroll-restoration-polyfill": "^0.6.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

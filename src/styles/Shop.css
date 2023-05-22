@@ -60,13 +60,20 @@
   .title-description {
     position: relative;
     width: 100%;
+    top: 15rem;
   }
-  .shop-image-container img {
+  
+  .shop-image-container {
     position: relative;
-    margin-top: 16rem;
-    display: flex;
     width: 100%;
+    margin-top: 15rem;
+    overflow: hidden;
     z-index: 999;
   }
+  
+  .shop-image-container img {
+    display: block;
+    width: 100%;
+  }  
   
 }
