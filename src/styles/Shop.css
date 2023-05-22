@@ -63,7 +63,10 @@
   }
   .shop-image-container img {
     position: relative;
-    top: 30rem;
+    margin-top: 16rem;
+    display: flex;
+    width: 100%;
+    z-index: 999;
   }
   
 }
