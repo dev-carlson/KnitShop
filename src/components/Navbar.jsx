@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import { BsShopWindow } from "react-icons/bs";
-import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
@@ -20,7 +19,7 @@ function Navbar() {
             setExpandNavbar((prev) => !prev);
           }}
         >
-          <GiHamburgerMenu />
+          Menu
         </button>
       </div>
       <div className="links" onClick={handleLinkClick}>

@@ -1,12 +1,11 @@
 .navbar {
   background-color: transparent;
-  align-items: center;
   justify-content: space-between;
-  z-index: 9999;
+  z-index: 100;
   position: fixed;
   top: 0;
-  pointer-events: auto;
   width: 100%;
+  white-space: nowrap;
 }
 
 .links {
@@ -25,7 +24,6 @@
 .links a {
   text-decoration: none;
   color: #dee2e3;
-  border-bottom: 1px solid transparent;
 }
 
 .links:hover {
@@ -47,14 +45,6 @@
 
 .links a.icon-class:hover {
   box-shadow: none;
-}
-
-.toggleButton button {
-  margin-right: 20px;
-  background-color: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
 }
 
 #open {
@@ -79,65 +69,73 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .toggleButton {
-    display: none;
+
+  .icon-class{
+    opacity: 0;
   }
 
-  .toggleButton svg {
-    font-size: 30px;
+  .navbar {
+    width: 10%;
+  }
+
+  .toggleButton {
     position: relative;
+    z-index: 100;
+  }
+
+  .toggleButton button {
+    background-color: transparent;
+    border: none;
     color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .links {
+    position: absolute;
     top: 0;
+    height: 1vh;
+    width: 100vh;
+    background-color: white;
   }
 
   .links a {
+    top: 2rem;
     color: #000000;
     font-size: 20px;
+    display: flex;
+    border: 0px 0px 2px 0px solid black;
   }
 
   .links a:hover {
-    text-decoration: none;
-    box-shadow: 0px 3px 0px 0px black;
+    display: flex;
+    box-shadow: 0px 1px 0px 0px black;
     color: rgb(0, 0, 0);
     padding-bottom: 0;
     background-color: transparent;
   }
 
-  .links:hover {
+  .toggleButton {
+    display: flex;
     background-color: transparent;
   }
 
-  .toggleButton {
-    display: flex;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: tran;
-    z-index: 3;
-  }
   #close a {
     display: none;
   }
-  .links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-    background-color: transparent;
-  }
+
   #open {
-    height: auto;
-    background-color: white;
+    position: fixed;
     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
   }
   #open .links {
-    flex-direction: column;
     margin-top: 0;
   }
   #open a {
-    width: auto;
-    text-align: center;
     margin-bottom: 10px;
   }
   .hiddenLinks {
